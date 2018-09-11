@@ -1,0 +1,11 @@
+.greenText {
+    color: green;
+}
+
+.greenBorder {
+    border: 1px solid green;
+}
+
+.greenShadow {
+    box-shadow: 5px 5px green;
+}

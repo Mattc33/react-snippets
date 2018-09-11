@@ -1,0 +1,12 @@
+.timerContainer {
+    display: flex;
+    height: calc(100vh - 60px);
+    width: 100%
+}
+
+.timerInnerGrid {
+    margin: auto;
+    display: grid;
+    height: 50px;
+    width: 200px;
+}
