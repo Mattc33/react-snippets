@@ -19,3 +19,8 @@
   margin-left: auto;
   padding-right: 20px;
 }
+
+.header /deep/ NavLink {
+  width: 100%;
+  background-color: red;
+}

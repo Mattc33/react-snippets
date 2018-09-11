@@ -6,20 +6,23 @@ import { Select } from 'antd';
 
 const { Option, OptGroup } = Select;
 
-const nav = [
-    {
-        link: '/dataflow/Parent_parentToChild',
-        value: 'parentToChild',
-        display: 'Parent To Child'
-    },
-    {
-        link: '/dataflow/Parent_childToParent',
-        value: 'parentToChild',
-        display: 'Parent To Child'
-    },
-]
+// const nav = [
+//     {
+//         link: '/dataflow/Parent_parentToChild',
+//         value: 'parentToChild',
+//         display: 'Parent To Child'
+//     },
+//     {
+//         link: '/dataflow/Parent_childToParent',
+//         value: 'parentToChild',
+//         display: 'Parent To Child'
+//     },
+// ]
 
 class Header extends Component {
+
+    
+
     render() {
         return (
             <div className={classes.header}>
@@ -34,15 +37,24 @@ class Header extends Component {
                             <NavLink to='/' exact >Home</NavLink>
                         </Option>
                         <OptGroup label="Data Flow">
-                            <NavLink to='/dataflow/Parent_parentToChild' exact >
-                                <Option value='parentToChild'>Parent To Child</Option>
-                            </NavLink>
-                            <NavLink to='/dataflow/Parent_childToParent' exact >
-                                <Option value='childToParent'>Child To Parent</Option>
-                            </NavLink>
-                            <NavLink to='/dataflow/Parent_childToParent' exact >
-                                <Option value='childToParent'>Child To Parent</Option>
-                            </NavLink>
+                            
+                            <Option value='parentToChild'>
+                                <NavLink to='/dataflow/Parent_parentToChild' exact>
+                                    Parent To Child
+                                </NavLink>
+                            </Option>
+                            
+                            <Option value='childToParent'>
+                                <NavLink to='/dataflow/Parent_childToParent' exact>
+                                    Child To Parent
+                                </NavLink>
+                            </Option>
+
+                            <Option value='LocalStateAgeApp'>
+                                <NavLink to='/dataflow/LocalStateAgeApp' exact>
+                                    AgeApp Using Local State
+                                </NavLink>
+                            </Option>
                         </OptGroup>
                     </Select>
                 </div>
