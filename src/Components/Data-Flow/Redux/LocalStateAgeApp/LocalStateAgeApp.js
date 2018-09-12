@@ -14,6 +14,7 @@ class LocalStateAgeApp extends Component {
     render() {
         return (
             <div className={styles.ageApp}>
+                <h2>AgeApp Using Local State</h2>
                 <div>Age: <span>{this.state.age}</span></div>
                 <button onClick={this.onAgeUp}>Age UP</button>
                 <button onClick={this.onAgeDown}>Age DOWN</button>

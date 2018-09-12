@@ -55,6 +55,14 @@ class Header extends Component {
                                     AgeApp Using Local State
                                 </NavLink>
                             </Option>
+                            
+                            <Option value='ReduxAgeApp'>
+                                <NavLink to='/dataflow/ReduxAgeApp' exact>
+                                    AgeApp Using Redux
+                                </NavLink>
+                            </Option>
+
+
                         </OptGroup>
                     </Select>
                 </div>
